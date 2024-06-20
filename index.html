@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-rh="true" rel="shortcut icon" type="image/x-icon" href="./img/iconUber.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Uber</title>
+</head>
+
+<body>
+    <header style="background-color: #000000;">
+        <nav class=" text-white py-3 h-16 font-medium">
+            <div class="flex h-full px-16 items-center">
+                <ul class="font-normal me-6 text-2xl  ">
+                    <li class="py-1"><a class="py-1 " href="#">Uber</a></li>
+                </ul>
+                <ul
+                    class="flex flex-auto items-center me-4 [&>li]:py-2 [&>li]:me-1 [&>li>a]:px-3 [&>li>a]:py-2 [&>li>a:hover]:bg-zinc-800 [&>li>a]:rounded-full">
+                    <li><a href="#">Ride</a></li>
+                    <li><a href="#">Drive</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Uber East</a></li>
+                    <li style="padding: 0;">
+                        <button class=" flex items-center py-2 rounded-full hover:bg-zinc-800 px-3">
+                            About
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="white">
+                                <path d="M18 8v3.8l-6 4.6-6-4.6V8l6 4.6L18 8Z" fill="currentColor"></path>
+                            </svg>
+
+                        </button>
+                    </li>
+
+                </ul>
+                <ul
+                    class="flex items-center me-4 [&>li]:me-1 [&>li>button]:px-3 [&>li>button]:py-2 [&>li>button:hover]:bg-zinc-800 [&>li>button]:rounded-full">
+                    <li><button class="flex items-center gap-2">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8
+                                     11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3
+                                     0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 
+                                     0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 
+                                     3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 
+                                     12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
+                                    fill="currentColor"></path>
+                            </svg>En</button></li>
+                    <li><button>Help</button></li>
+                    <li><button>Log in</button></li>
+                    <li><button class="bg-[#fff] text-black ">Sign up</button></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="p-16" style="background-color: #000000;">
+            <article class="flex">
+                <div class="basis-1/2 flex items-center">
+                    <div class="w-[80%]">
+                        <div class="text-white">
+                            <h1 class="text-[50px] font-bold mb-8">Go anywhere with Uber</h1>
+                            <p class="text-lg mt-4">Request a ride, hop in, and go.</p>
+                        </div>
+                        <div class="mt-3">
+                            <div class="max-w-[396px]">
+                                <div class=" mt-2 w-full ">
+                                    <div class=" bg-white rounded-lg flex items-center w-full cursor-text h-[47px]">
+                                        <div class="ps-2 h-full w-[20px]">
+                                            <div class="pt-3">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                    data-baseweb="icon">
+                                                    <title>search</title>
+                                                    <path
+                                                        d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="mx-2 h-full w-full text-lg  ">
+                                            <input
+                                                class="h-full w-full placeholder:text-black   bg-white ps-2  focus:outline-none  "
+                                                type="text" placeholder="Enter location">
+                                        </div>
+                                        <div class="pe-3 h-full">
+                                            <div class="ms-2 h-full w-6 pt-2">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                    <title>Navigate right up</title>
+                                                    <path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="currentColor">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" mt-2 w-full ">
+                                    <div
+                                        class="bg-white border-2 rounded-lg flex items-center w-full cursor-text h-[47px]">
+                                        <div class=" ps-2 h-full w-[20px]">
+                                            <div class="pt-3">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                                    data-baseweb="icon">
+                                                    <title>search</title>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M14 10h-4v4h4v-4ZM7 7v10h10V7H7Z" fill="currentColor">
+                                                    </path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="mx-2 h-full w-full text-lg  ">
+                                            <input
+                                                class="h-full w-full placeholder:text-black   bg-white ps-2  focus:outline-none  "
+                                                type="text" placeholder="Enter destination">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-full">
+                            <div>
+                                <div>
+                                    <a class=" font-medium text-black bg-white mt-3 rounded-lg py-3.5 px-6 inline-flex"
+                                        href="#"> See prices</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="basis-1/2 ">
+                    <img class="w-full" src="./img/Ride-with-Uber.webp" alt="Ride with uber">
+                </div>
+
+            </article>
+        </section>
+        <section class="p-16" style="background-color: #fff;">
+            <article class="flex">
+                <div class="basis-1/2 ">
+                    <img class="w-full" src="./img/earner-illustra.webp" alt="Ride with uber">
+                </div>
+                <div class="basis-1/2 flex items-center justify-end">
+                    <div class="w-[80%]">
+                        <div class="text-black">
+                            <h1 class="text-[50px] font-bold mb-8">Drive when you want, make what you needr</h1>
+                            <p class="text-lg mt-4">Make money on your schedule with deliveries or rides—or both. You
+                                can use your own car or choose a rental through Uber.</p>
+                        </div>
+                        <div>
+                            <div class="w-full">
+                                <div class="flex mt-5">
+                                    <div class="mt-3 mr-5">
+                                        <a class=" font-medium text-white bg-black  rounded-lg py-3.5 px-6 inline-flex"
+                                            href="#"> Get started</a>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class=" mt-2 ">
+                                            <a class=" font-medium text-black bg-white " href="#">
+                                                <div>
+                                                    <span class=" pb-2 border-b">Already have an account? Sign in</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+            </article>
+        </section>
+        <section class="p-16" style="background-color: #fff;">
+            <article class="flex">
+
+                <div class="basis-1/2 flex items-center">
+                    <div class="w-[80%]">
+                        <div class="text-black">
+                            <h1 class="text-[50px] font-bold mb-8">The Uber you know, reimagined for business</h1>
+                            <p class="text-lg mt-4">Uber for Business is a platform for managing global rides and meals,
+                                and local deliveries, for companies of any size.</p>
+                        </div>
+                        <div>
+                            <div class="w-full">
+                                <div class="flex mt-5">
+                                    <div class="mt-3 mr-5">
+                                        <a class=" font-medium text-white bg-black  rounded-lg py-3.5 px-6 inline-flex"
+                                            href="#"> Get started</a>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class=" mt-2 ">
+                                            <a class=" font-medium text-black bg-white " href="#">
+                                                <div>
+                                                    <span class=" pb-2 border-b">Check out our solutions</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-1/2 ">
+                    <img class="w-full " src="./img/u4b-square.webp" alt="Ride with uber">
+                </div>
+
+            </article>
+        </section>
+        <section class="p-16" style="background-color: #fff;">
+            <article class="flex">
+
+                <div class="basis-1/2 flex items-center">
+                    <div class="w-[80%]">
+                        <div class="text-black">
+                            <h1 class="text-[50px] font-bold mb-8">Check out what's new at Uber</h1>
+                            <p class="text-lg mt-4">The products and features announced at Go-Get 2024 are designed to
+                                help you connect with others and save a little money along the way. Discover how we’re
+                                making every journey an opportunity for interaction—because life is better together.</p>
+                        </div>
+                        <div>
+                            <div class="w-full">
+                                <div class="flex mt-5">
+                                    <div class="mt-3 mr-5">
+                                        <a class=" font-medium text-white bg-black  rounded-lg py-3.5 px-6 inline-flex"
+                                            href="#"> Whatch the event</a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="basis-1/2 ">
+                    <img class="w-full " src="./img/GG2024-homepage.webp" alt="Ride with uber">
+                </div>
+
+            </article>
+        </section>
+        <section class="p-16" style="background-color: #F6F6F6;">
+            <article>
+                <div>
+                    <div>
+                        <h2 class="text-[40px] font-medium mb-4">It’s easier in the apps</h2>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="basis-[48%] bg-white">
+                            <div>
+                                <div>
+                                    <a class="flex" href="">
+                                        <div class=" my-6 ms-6">
+                                            <img class=" " src="./img/Final-Download-Uber-App.webp"
+                                                alt="Ride with uber">
+                                        </div>
+                                        <div class=" py-6 ps-6 pr-12 flex flex-col justify-center ">
+                                            <div>
+                                                <h2 class="text-[25px] font-medium mb-1">Download the Uber app</h2>
+                                            </div>
+                                            <div>
+                                                <p>Scan to download</p>
+                                            </div>
+                                        </div>
+                                        <div class="  flex flex-col justify-center "">
+                                            <svg aria-hidden=" true" focusable="false" width="20" height="25"
+                                            viewBox="0 0 36 36">
+                                            <title>search</title>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M18.2354 2H24.2711L36 18L24.2711 34H18.2354L28.1237 20.56H0V15.44H28.1237L18.2354 2Z"
+                                                fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="basis-[48%] bg-white ">
+                            <div>
+                                <div>
+                                    <a class="flex" href="">
+                                        <div class=" my-6 ms-6">
+                                            <img class=" " src="./img/Final-Download-Uber-App.webp"
+                                                alt="Ride with uber">
+                                        </div>
+                                        <div class=" py-6 ps-6 pr-12 flex flex-col justify-center  ">
+                                            <div>
+                                                <h2 class="text-[20px] font-medium mb-1">Download the Uber app</h2>
+                                            </div>
+                                            <div>
+                                                <p>Scan to download</p>
+                                            </div>
+                                        </div>
+                                        <div class="   flex flex-col justify-center ">
+                                            <svg aria-hidden="true" focusable="false" width="20" height="25"
+                                                viewBox="0 0 36 36">
+                                                <title>search</title>
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M18.2354 2H24.2711L36 18L24.2711 34H18.2354L28.1237 20.56H0V15.44H28.1237L18.2354 2Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="p-16" style="background-color: #000;">
+            <div>
+
+                <div class="text-white flex flex-col">
+                    <a class="h-28 pt-10 w-[70%]" href="">Uber</a>
+                    <a class="h-24 w-[70%]" href="">
+                        <div class="h-24 w-[120px] border-b">Visit Help Center</div>
+                    </a>
+                </div>
+                <div class="mt-8">
+                    <div class="flex gap-8 mb-10 text-white">
+                        <ul class="w-1/4 [&>li]:py-1 [&>li>a:hover]:text-zinc-400">
+                            <li class="font-bold mb-2">Company </li>
+                            <li class="font-bold mb-2"></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Our offering</a></li>
+                            <li><a href="">Newsroom</a></li>
+                            <li><a href="">Investors</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Carees</a></li>
+                            <li><a href="">AI</a></li>
+                            <li><a href="">Gift cards</a></li>
+                        </ul>
+                        <ul class="w-1/4 [&>li]:py-1 [&>li>a:hover]:text-zinc-400">
+                            <li class="font-bold mb-2">Products </li>
+                            <li><a href="">Rive</a></li>
+                            <li><a href="">Drive</a></li>
+                            <li><a href="">Eat</a></li>
+                            <li><a href="">Uber for Business</a></li>
+                            <li><a href="">Uber freight</a></li>
+                        </ul>
+                        <ul class="w-1/4 [&>li]:py-1 [&>li>a:hover]:text-zinc-400">
+                            <li class="font-bold mb-2">Global Citizenship</li>
+                            <li><a href="">Safety</a></li>
+                            <li><a href="">Diversity and Inclusion</a></li>
+                            <li><a href="">Sustainbility</a></li>
+
+                        </ul>
+                        <ul class="w-1/4 [&>li]:py-1 [&>li>a:hover]:text-zinc-400">
+                            <li class="font-bold mb-2">Travel</li>
+                            <li><a href="">Reserve</a></li>
+                            <li><a href="">Airports</a></li>
+                            <li><a href="">Cities</a></li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div>
+                    <div class=" flex flex-col text-white   font-medium">
+                        <div class="flex h-full  items-center">
+
+                            <ul
+                                class="flex flex-auto items-center me-4  [&>li]:p-3 [&>li]:me-16   [&>li:hover]:bg-zinc-800 [&>li]:rounded-lg">
+                                <li><a href="#"><img src="./img/fcebook.svg" alt="logo facebook" /></a></li>
+                                <li><a href="#"><img src="./img/x.svg" alt="logo x" /></a></li>
+                                <li><a href="#"><img src="./img/youtube.svg" alt="logo youtube" /></a></li>
+                                <li><a href="#"><img src="./img/instagram.svg" alt="logo intagram" /></a></li>
+                                <li><a href="#"><img src="./img/tiktok.svg" alt="logo tik tok"></a></li>
+
+
+                            </ul>
+                            <ul
+                                class="flex items-center me-4 [&>li]:me-1 [&>li>button]:px-3 [&>li>button]:py-2 [&>li>button:hover]:bg-zinc-800 [&>li>button]:rounded-lg">
+                                <li><button class="flex items-center gap-2">
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                                            <path
+                                                d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8
+                                                         11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3
+                                                         0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 
+                                                         0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 
+                                                         3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 
+                                                         12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
+                                                fill="currentColor"></path>
+                                        </svg>English</button></li>
+                                <li><button>San fransisco by Area</button></li>
+                            </ul>
+                        </div>
+                        <div class=" pt-4 ">
+                            <div class=" flex w-[50%]   ">
+                                <a href=""><img class="w-40" src="./img/app-store-google-4d63c31a3e.svg"
+                                        alt=" app store image"></a>
+                                <a class="mx-2" href=""><img class="w-36" src="./img/app-store-apple-f1f919205b.svg"
+                                        alt=" aple store image"></a>
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <div class="flex justify-between ">
+                                <di class="my-3 font-thin text-sm">© 2024 Uber Technologies Inc.</di>
+                                <di class="[&>a:hover]:text-zinc-400 text-right">
+                                    <a class="mr-3" href="">Privacy</a>
+                                    <a class="mr-3" href="">Accecibility</a>
+                                    <a href="">Terms</a>
+                                </di>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
